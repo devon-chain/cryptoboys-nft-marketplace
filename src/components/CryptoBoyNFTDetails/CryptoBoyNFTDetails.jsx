@@ -53,7 +53,7 @@ class CryptoBoyNFTDetails extends Component {
             this.props.cryptoboy.price.toString(),
             "Ether"
           )}{" "}
-          Ξ
+          FX
         </p>
         <p>
           <span className="font-weight-bold">No. of Transfers</span> :{" "}
@@ -147,7 +147,7 @@ class CryptoBoyNFTDetails extends Component {
                   this.props.cryptoboy.price.toString(),
                   "Ether"
                 )}{" "}
-                Ξ
+                FX
               </button>
             ) : (
               <>
@@ -161,7 +161,7 @@ class CryptoBoyNFTDetails extends Component {
                     this.props.cryptoboy.price.toString(),
                     "Ether"
                   )}{" "}
-                  Ξ
+                  FX
                 </button>
                 <p className="mt-2">Currently not for sale!</p>
               </>

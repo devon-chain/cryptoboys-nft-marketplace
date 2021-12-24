@@ -148,6 +148,24 @@ class App extends Component {
 
   connectToMetamask = async () => {
     await window.ethereum.enable();
+
+    await window.ethereum.request({
+      method: 'wallet_addEthereumChain',
+      params: [{
+        chainId: "0x15f91",
+        chainName: "Fx-Testnet",
+        nativeCurrency: {
+          name: 'Testnet FX',
+          symbol: 'FX',
+          decimals: 18
+        },
+        rpcUrls: ["https:\/\/testnet-fx-json-web3.functionx.io:8545"],
+        blockExplorerUrls: ["https:\/\/testnet-fxscan.functionx.io"]
+      }]
+    }).catch((error) => {
+      console.log(error)
+    })
+
     this.setState({ metamaskConnected: true });
     window.location.reload();
   };
@@ -161,9 +179,9 @@ class App extends Component {
           cryptoBoys: this.state.cryptoBoys.map((cryptoboy) =>
             cryptoboy.tokenId.toNumber() === Number(metaData.tokenId)
               ? {
-                  ...cryptoboy,
-                  metaData,
-                }
+                ...cryptoboy,
+                metaData,
+              }
               : cryptoboy
           ),
         });
@@ -303,7 +321,7 @@ class App extends Component {
         {!this.state.metamaskConnected ? (
           <ConnectToMetamask connectToMetamask={this.connectToMetamask} />
         ) : !this.state.contractDetected ? (
-          <ContractNotDeployed />
+          <ContractNotDeployed connectToMetamask={this.connectToMetamask} />
         ) : this.state.loading ? (
           <Loading />
         ) : (

@@ -1,5 +1,6 @@
 import React from "react";
-import icon from "./favicon-32x32.png";
+// import icon from "./favicon-32x32.png";
+import icon from "./fx.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

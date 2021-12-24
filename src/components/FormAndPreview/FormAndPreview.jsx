@@ -441,7 +441,7 @@ class FormAndPreview extends Component {
                   id="cryptoBoyPrice"
                   value={this.state.cryptoBoyPrice}
                   className="form-control"
-                  placeholder="Enter Price In Ξ"
+                  placeholder="Enter Price In FX"
                   onChange={(e) =>
                     this.setState({ cryptoBoyPrice: e.target.value })
                   }

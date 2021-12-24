@@ -5,7 +5,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
     <div className="jumbotron">
       <h1 className="display-5">
-        CryptoBoy NFT Marketplace
+        FunctionX NFT Marketplace
       </h1>
       <p className="lead">
         This is an NFT marketplace where you can mint your ERC721 implemented{" "}
@@ -17,7 +17,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         className="btn btn-primary d-flex align-items-center"
         style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
       >
-        Connect Metamask{" "}
+        Connect To FunctionX Testnet{" "}
         <img
           src={metamaskIcon}
           alt="metamask-icon"

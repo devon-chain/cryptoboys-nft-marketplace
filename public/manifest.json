@@ -1,0 +1,11 @@
+{
+    "background_color": "#fff",
+    "display": "standalone",
+    "homepage_url": "https://github.com/devpavan04/cryptoboys-nft-marketplace",
+    "icons": [],
+    "orientation": "portrait",
+    "name": "Cryptoboys",
+    "short_name": "Cryptoboys",
+    "start_url": ".",
+    "theme_color": "#ff007a"
+}

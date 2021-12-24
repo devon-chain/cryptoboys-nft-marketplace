@@ -4,7 +4,7 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
   return (
     <div>
       <div className="jumbotron">
-        <h1 className="display-5">CryptoBoy NFT Marketplace</h1>
+        <h1 className="display-5">FunctionX NFT Marketplace</h1>
         <p className="lead">
           This is an NFT marketplace where you can mint ERC721 implemented{" "}
           <i>Crypto Boy NFTs</i> and manage them.
@@ -13,7 +13,7 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
         <p className="lead">Account address :</p>
         <h4>{accountAddress}</h4>
         <p className="lead">Account balance :</p>
-        <h4>{accountBalance} Ξ</h4>
+        <h4>{accountBalance} FX</h4>
       </div>
     </div>
   );
